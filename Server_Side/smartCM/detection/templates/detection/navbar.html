@@ -1,0 +1,16 @@
+  
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static '/css/navbar.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/css/util.css' %}">
+
+<nav class="navbar navbar-dark  justify-content-between nav-back" style="border-bottom: 0.5px solid #282828;">
+    <span class="navbar-brand" style=" color: #FDFDFD; font-weight: 900;">Weapon Detection</span>
+
+    <ul class="form-inline my-2 my-lg-0">
+      <span class="hello-msg" style="color: #FDFDFD;ss ; font-weight: 900;">Welcome back, {{request.user}}</span>
+      <span ><a class="hello-msg" href="{% url 'logout' %}" style="color: #FDFDFD; ;">Logout</a></span>
+    </ul>
+
+  
+  </nav>

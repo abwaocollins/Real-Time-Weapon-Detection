@@ -1,0 +1,40 @@
+{%  extends 'detection/main.html' %}
+{% block content %}
+{% load static %}
+{% load event_tags %}
+
+<div class="image-wrapper">
+	<div class="image-cont">
+		{% for alert in uploadAlert %}
+
+		<img src="{{alert.image.url}}" alt="" class="img-fluid">
+
+		{%endfor%}
+	</div>
+	<div class="about_det">
+
+			<table class="table table-borderless">
+				<tr>
+					<th scope="col" class="top-row">Location</th>
+					<th scope="col" class="top-row">Alert was sent to</th>
+					<th scope="col" class="top-row">Time</th>
+					<th scope="col" class="top-row">Camera</th>
+				</tr>
+
+				{% for alert in uploadAlert %}
+
+				<tr>
+					<td>{{alert.location}}</td>
+					<td>{{alert.alert_receiver}}</td>
+					<td>{{alert.date_created|date:"Y-m-d H:i:s"}}</td>
+					<td ><a class="btn btn-sm btn-infor" style="background-color: #B9C488; " href="{% url 'camera' %}">Start camera</a></td> 
+					
+				</tr>
+				{% endfor %}
+
+			</table>
+	</div>
+
+</div>
+
+{% endblock content%}
