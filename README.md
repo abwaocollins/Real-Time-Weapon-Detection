@@ -16,6 +16,8 @@
 
 >![Dashboard](/imgs/Dash.png)
 
+<p>&nbsp;</p>
+
 
 
 >*Form for settings configs*
@@ -23,6 +25,8 @@
 
 
 >![Forms](/imgs/set.PNG)
+
+<p>&nbsp;</p>
 
 >*Detection example*
 >![Detection](/imgs/Det%202.png)
