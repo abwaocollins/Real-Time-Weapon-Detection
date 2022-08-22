@@ -14,7 +14,7 @@
 
 >*Dashboard*
 
->![Dashboard](/imgs/dash.png)
+>![Dashboard](/imgs/Dash.png)
 
 
 
